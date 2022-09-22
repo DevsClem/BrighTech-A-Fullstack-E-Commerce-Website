@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+    <body>
+		<header>
+			<!-- Fixed navbar -->
+			<nav class="navbar navbar-expand fixed-top border-bottom px-5 py-2"><!-- add fixed-top -->
+				<div class="container-fluid">
+					<a href="/" class="align-items-center text-decoration-none"><span class="text-white fs-4 text-primary">BrighTech</span></a>
+					<div>
+						<ul class="navbar-nav">
+							<li class=""><a href="cart.html" class="btn btn-danger ms-2">Shopping Cart (5)</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="mt-5">
+			<!-- Product Side Bar -->
+			<div class="search d-inline-block p-3 mt-5 mx-5 border shadow rounded-3">
+				<ul class="nav nav-pills flex-column mb-auto">
+					<li class="nav-item">
+						<form action="" method="post">
+							<input type="text" name="name" placeholder="Product name" class="search-product"/>
+							<input type="submit" class="search-button" value=""/>
+						</form>
+					</li>
+					<li class="nav-item mt-1 mb-2">Categories</li>
+					<li class="w-50 ms-4"><a href="#" class="nav-link link-dark my-2 p-0">Monitors (25)</a></li>
+					<li class="w-50 ms-4"><a href="#" class="nav-link link-dark my-2 p-0">Ram (35)</a></li>
+					<li class="w-50 ms-4"><a href="#" class="nav-link link-dark my-2 p-0">Mouse (5)</a></li>
+					<li class="w-50 ms-4"><a href="#" class="nav-link link-dark my-2 p-0">Keyboards (105)</a></li>
+					<li class="w-50 ms-4"><a href="#" class="nav-link link-dark my-2 fst-italic p-0">Show All</a></li>
+				</ul>
+			</div>
+			<!-- Products -->
+			<div class="products d-inline-block align-top p-4 my-5 border shadow rounded-3">
+				<div>
+					<h2 class="d-inline-block">All Products</h2>
+					<ul class="navbar-nav d-inline-block float-end">
+						<li class="d-inline-block mx-2"><a href="#" class="nav-link">first</a></li>|
+						<li class="d-inline-block mx-2"><a href="#" class="nav-link">prev</a></li>|
+						<li class="d-inline-block mx-2">1</li>|
+						<li class="d-inline-block mx-2"><a href="#" class="nav-link">next</a></li>
+					</ul>
+				</div>
+				<div class="my-1">
+					<ul class="sort navbar-nav d-inline-block mb-0">
+						<li class="">
+							<label for="sort" class="">Sort by:</label>
+							<select name="sort" id="sort" class="">
+								<option value="price">Price</option>
+								<option value="Most Popular">Most Popular</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img2.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img2.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img3.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img2.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img4.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img3.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img4.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img5.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img3.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<div class="product d-inline-block mx-3 my-2">
+					<a href="item.html" class="link-dark text-decoration-none">
+						<img src="img/img2.png" class="card-img-top" alt="monitor">
+						<p class="price">₱18000</p>
+						<p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+					</a>
+				</div>
+				<nav aria-label="Page navigation" class="my-4">
+					<ul class="pagination justify-content-center">
+						<li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+						<li class="page-item"><a class="page-link" href="#">5</a></li>
+						<li class="page-item"><a class="page-link" href="#">6</a></li>
+						<li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+					</ul>
+				</nav>
+			</div>
+		</main>
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

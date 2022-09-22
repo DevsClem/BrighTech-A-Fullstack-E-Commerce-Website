@@ -1,0 +1,1 @@
+<a href="<?= base_url(); ?>carts" id="cart_quantity" class="btn btn-danger ms-2">Shopping Cart (<?= $cart_quantity == null || 0 ? 0 : $cart_quantity; ?>)</a>

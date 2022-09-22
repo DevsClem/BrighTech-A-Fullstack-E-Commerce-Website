@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('form').submit(function(){
+                    $('p.success').css('display', 'block').delay(300).fadeOut(2000);
+                    return false;
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand fixed-top border-bottom px-5 py-2">
+                <div class="container-fluid">
+                    <a href="/" class="align-items-center text-decoration-none"><span class="text-white fs-4 text-primary">BrighTech</span></a>
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class=""><a href="cart.html" class="btn btn-danger ms-2">Shopping Cart (5)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="mt-5">
+            <!-- Images -->
+            <div class="item d-inline-block">
+                <a href="catalog.html" class="mb-3 d-inline-block">Go Back</a>
+                <h4 class="mb-3">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</h4>
+                <img src="img/img2.png" class="chosen-product" alt="monitor">
+                <div class="other-images">
+                    <img src="img/img2.png" alt="" class="img-thumbnail">
+                    <img src="img/img2.png" alt="" class="img-thumbnail">
+                    <img src="img/img2.png" alt="" class="img-thumbnail">
+                    <img src="img/img2.png" alt="" class="img-thumbnail">
+                    <img src="img/img2.png" alt="" class="img-thumbnail">
+                </div>
+            </div>
+            <!-- Descirption and Form -->
+            <div class="item-description d-inline-block align-top">
+                <p>Pariatur laboris et excepteur qui aliqua culpa pariatur qui. Est irure deserunt non anim aute exercitation enim esse proident fugiat est nisi tempor ipsum. Mollit qui voluptate mollit non. In velit occaecat labore ut minim ad dolore nostrud commodo culpa et voluptate consequat dolore. Ad officia esse enim incididunt minim nulla deserunt sunt reprehenderit aliqua adipisicing et. Veniam est in qui culpa in minim ipsum enim dolor. Proident irure quis officia exercitation aliqua reprehenderit velit laboris eu sint.Non excepteur amet esse dolor. Ullamco veniam eu proident magna veniam sunt est aliqua sint et nostrud do exercitation elit. Eu exercitation ea ex duis cupidatat proident id dolore do cupidatat ad fugiat dolore Lorem.Ullamco aute ut occaecat est eiusmod et sint id anim reprehenderit ex eiusmod pariatur. Labore duis commodo et consequat eiusmod aliquip. Velit fugiat enim officia pariatur. Excepteur mollit ea officia consequat veniam pariatur sit. Proident nostrud cupidatat incididunt sit esse esse qui. Do minim ullamco eu sit labore reprehenderit do deserunt fugiat nostrud commodo dolore.Ipsum amet esse excepteur sit ullamco consequat. Voluptate sit dolore anim mollit aliquip fugiat. Enim dolore occaecat consequat fugiat consequat sunt sunt esse non </p>
+                <form action="" method="post" class="float-end w-50">
+                    <input type="submit" value="Buy" class="btn btn-success px-3">
+                    <select name="quantity" class="w-75 py-1 align-middle">
+                        <option value="1">1 (₱18,000)</option>
+                        <option value="2">2 (₱36,000)</option>
+                        <option value="3">3 (₱54,000)</option>
+                    </select>
+                    <p class="success">Item added to the cart</p>
+                </form>
+            </div>
+            <!-- Similar Items -->
+            <div class="similar-items">
+                <h2>Similar Items</h2>
+                <div class="product d-inline-block mx-3 my-2">
+                    <a href="item.html" class="link-dark text-decoration-none">
+                        <img src="img/img2.png" class="card-img-top" alt="monitor">
+                        <p class="price">₱18000</p>
+                        <p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+                    </a>
+                </div>
+                <div class="product d-inline-block mx-3 my-2">
+                    <a href="item.html" class="link-dark text-decoration-none">
+                        <img src="img/img2.png" class="card-img-top" alt="monitor">
+                        <p class="price">₱18000</p>
+                        <p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+                    </a>
+                </div>
+                <div class="product d-inline-block mx-3 my-2">
+                    <a href="item.html" class="link-dark text-decoration-none">
+                        <img src="img/img2.png" class="card-img-top" alt="monitor">
+                        <p class="price">₱18000</p>
+                        <p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+                    </a>
+                </div>
+                <div class="product d-inline-block mx-3 my-2">
+                    <a href="item.html" class="link-dark text-decoration-none">
+                        <img src="img/img2.png" class="card-img-top" alt="monitor">
+                        <p class="price">₱18000</p>
+                        <p class="mt-2">LG 34GL750 34″ ULTRAWIDE 144HZ 1MS</p>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>

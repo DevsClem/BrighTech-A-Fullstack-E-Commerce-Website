@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Login Page</title>
+        <link rel="stylesheet" href="<?= base_url();?>assets/css/user_style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand fixed-top border-bottom px-4 py-2">
+                <div class="container-fluid">
+                    <a href="/" class="align-items-center text-decoration-none"><span class="text-white fs-4 text-primary">BrighTech</span></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-fluid py-5">
+                <div class="col-sm-9 col-md-7 col-lg-4 mx-auto">
+                    <div class="card border-3 shadow rounded-3 my-5">
+                        <div class="card-body p-4 p-sm-5">
+                            <img src="<?= base_url();?>assets/img/person.svg" alt="person" class="center" />
+                            <h2 class="card-title text-center my-4 fs-7">Admin Login</h2>
+                            <form action="/users/process_signin" method="post">
+                                <input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>">
+                                <div class="mb-3 errors" >
+                                <?= $this->session->flashdata('errors'); ?>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                    <label for="floatingPassword">Password</label>
+                                </div>
+                                <div class="d-grid">
+                                    <input class="btn btn-primary btn-login text-uppercase fw-bold" type="submit"value="Login">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
