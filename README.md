@@ -24,7 +24,7 @@ Demo Link: https://youtu.be/8WFXHL4nc1M
 
 ### How to run app:
 1. Import sql file.
-2. Run php server using your preferred local developer tool for PHP (XAMPP, Laragon, etc).
+2. Run php server using your preferred local development tool for PHP (XAMPP, Laragon, etc).
 
 # Database Design
 ![e-commerce](https://user-images.githubusercontent.com/83996435/158003187-33088552-03e0-4129-8040-e881c2463ee6.PNG)
