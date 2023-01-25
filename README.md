@@ -11,7 +11,7 @@ Demo Link: https://youtu.be/8WFXHL4nc1M
 - Orders table with pagination, search and sort.
 - Prodcuts table with serach, update and delete.
 - Add new product with sortable images from primary image to least.
-- Add and update product categories.
+- Add and update product categories
 
 ### Technologies used:
 - HTML
